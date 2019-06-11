@@ -8,6 +8,8 @@
   <dd>Python 2.XX version of script</dd>
   <dt><strong>Image2CoCo3_3.py</strong></dt>
   <dd>Python 3.XX version of script</dd>
+  <dt><strong>Image2CoCo3_3GUI.py</strong></dt>
+  <dd>Python 3.XX version of script with full Tkinter GUI</dd>
   <dt><strong>makedisk.bat</strong></dt>
   <dd>Windows batch file for creating a disk image from the
 	output either python script using Toolshed "decb.exe"</dd>
