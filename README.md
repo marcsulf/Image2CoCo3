@@ -39,7 +39,7 @@ Both python scripts require the following python libraries in order to work:
   <dd>I'm using the "add" module from this in a map() call.</dd>
 </dl>
 
-<h1>Updates</h1>
+<h2>Updates</h2>
 Update 31-May-19: Corrected a bug in both scripts that prevented "no dithering"
 from working correctly.
 
