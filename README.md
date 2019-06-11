@@ -54,7 +54,7 @@ the following libraries as well:
 	as a separate file.</dd>
 </dl>
 
-<h1>Updates</h1>
+<h2>Updates</h2>
 Update 31-May-19: Corrected a bug in both scripts that prevented "no dithering"
 from working correctly.
 
@@ -62,22 +62,24 @@ from working correctly.
 
 <p>These scripts will take an arbitrary image in just about any standard format, 
 of any size and aspect ratio, and convert it to be viewable on a CoCo 3 using 
-the HSCREEN 2 (320x192, 16 color) graphics mode. NOTE: the image file must be 
-in the same directory as this python script for the script to operate correctly. 
-I do not have any path handling. The program scales the image to fit on HSCREEN 
-2, asking for stretch and/or positioning info if the image has a different 
+the `HSCREEN 2` (320x192, 16 color) graphics mode. NOTE: the image file must be 
+in the same directory as this python script for the script to operate correctly
+using the command line utilities, since I do not have any path handling in those.
+The GUI version will work on any image file in any location on your computer. 
+The program scales the image to fit on `HSCREEN 2`, asking for stretch and/or 
+positioning info if the image has a different 
 aspect ratio than the screen. It then dithers the image using a 16 color subset 
-of the CoCo 3 color palette. Then it outputs four .BIN files (one for each 8kB 
-bank required for an HSCREEN 2 screen), and a Super ECB BASIC program which is 
-suitable for loading and displaying the image. The .BAS program includes the 
-PALETTE needed for proper display of the image, and is commented to make it 
+of the CoCo 3 color palette. Then it outputs four `.BIN` files (one for each 8kB 
+bank required for an `HSCREEN 2` screen), and a Super ECB BASIC program which is 
+suitable for loading and displaying the image. The `.BAS` program includes the 
+`PALETTE` needed for proper display of the image, and is commented to make it 
 easier to understand what it is doing. 
 
-<p>To create a .DSK image suitable for loading on the CoCo, if you are using 
-Windows, you can either drag and drop the .BAS program onto the "makedisk.bat" 
-batch file that should be included with this distribution, or call "makedisk 
-MYPIC.BAS" from the command line, assuming that all of the files are in the 
-same directory as the ToolShed "decb.exe" utility. A similar script could 
+<p>To create a `.DSK` image suitable for loading on the CoCo, if you are using 
+Windows, you can either drag and drop the `.BAS` program onto the `makedisk.bat` 
+batch file that should be included with this distribution, or call `makedisk 
+MYPIC.BAS` from the command line, assuming that all of the files are in the 
+same directory as the ToolShed `decb.exe` utility. A similar script could 
 easily be constructed for a Linux or Mac system. 
 
 <p>I originally wrote the script in order to create a fancy title screen for a 
