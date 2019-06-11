@@ -21,7 +21,7 @@ creating and manipulating DECB CoCo disk images. This is not my work, but I
 highly recommend it for creating and manipulating CoCo disk images and files.
 
 <h2>Libraries Needed</h2>
-Both python scripts require the following python libraries in order to work:
+Both command line scripts require the following python libraries in order to work:
 
 <dl>
   <dt><strong>numpy</strong></dt>
@@ -39,6 +39,19 @@ Both python scripts require the following python libraries in order to work:
 		of the appropriate CoCo palette.</dd>
   <dt><strong>operator</strong></dt>
   <dd>I'm using the "add" module from this in a map() call.</dd>
+</dl>
+
+In addition to those needed for the command line version, the GUI version requires
+the following libraries as well:
+
+<dl>
+  <dt><strong>tkinter</strong></dt>
+  <dd>Required for creating the GUI</dd>
+  <dt><strong>os</strong></dt>
+  <dd>Required for deleting temporary files</dd>
+  <dt><strong>base64</strong></dt>
+  <dd>Required for generating the window icon file without having to have it 
+	as a separate file.</dd>
 </dl>
 
 <h1>Updates</h1>
