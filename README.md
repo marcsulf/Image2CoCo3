@@ -1,8 +1,8 @@
 # Image2CoCo3
-<h1>Brief Description</h1>
+<h2>Brief Description</h2>
 <h3>Python utility for converting image files for use with HSCREEN 2 graphics on the Tandy Color Computer 3</h3>
 
-<h1>Files</h1>
+<h2>Files</h2>
 <dl>
   <dt><strong>Image2CoCo3_2.py</strong></dt>
   <dd>Python 2.XX version of script</dd>
@@ -18,7 +18,7 @@ You will also want to get `decb.exe` from the
 creating and manipulating DECB CoCo disk images. This is not my work, but I 
 highly recommend it for creating and manipulating CoCo disk images and files.
 
-<h1>Libraries Needed</h1>
+<h2>Libraries Needed</h2>
 Both python scripts require the following python libraries in order to work:
 
 <dl>
@@ -43,7 +43,7 @@ Both python scripts require the following python libraries in order to work:
 Update 31-May-19: Corrected a bug in both scripts that prevented "no dithering"
 from working correctly.
 
-<h1>Complete Description</h1>
+<h2>Complete Description</h2>
 
 <p>These scripts will take an arbitrary image in just about any standard format, 
 of any size and aspect ratio, and convert it to be viewable on a CoCo 3 using 
