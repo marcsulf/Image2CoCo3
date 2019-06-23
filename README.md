@@ -1,6 +1,6 @@
 # Image2CoCo3
 <h2>Brief Description</h2>
-<h3>Python utility for converting image files for use with HSCREEN 2 graphics on the Tandy Color Computer 3</h3>
+<h3>Python utility for converting image files for use with PMODE graphics on the Tandy Color Computers</h3>
 
 <h2>Files</h2>
 <dl>
@@ -61,31 +61,24 @@ from working correctly.
 <h2>Complete Description</h2>
 
 These scripts will take an arbitrary image in just about any standard format, 
-of any size and aspect ratio, and convert it to be viewable on a CoCo 3 using 
-the `HSCREEN 2` (320x192, 16 color) graphics mode. NOTE: the image file must be 
-in the same directory as this python script for the script to operate correctly
-using the command line utilities, since I do not have any path handling in those.
-The GUI version will work on any image file in any location on your computer. 
-The program scales the image to fit on `HSCREEN 2`, asking for stretch and/or 
-positioning info if the image has a different 
-aspect ratio than the screen. It then dithers the image using a 16 color subset 
-of the CoCo 3 color palette. Then it outputs four `.BIN` files (one for each 8kB 
-bank required for an `HSCREEN 2` screen), and a Super ECB BASIC program which is 
-suitable for loading and displaying the image. The `.BAS` program includes the 
-`PALETTE` needed for proper display of the image, and is commented to make it 
-easier to understand what it is doing.
+of any size and aspect ratio, and convert it to be viewable on a CoCo 2 using 
+the user's choice of `PMODE` graphics mode. The program scales the image to fit 
+on the selected `PMODE` graphics screen, asking for stretch and/or positioning 
+info if the image has a different aspect ratio than the screen. It then dithers 
+the image using the correct colors from the selected `PMODE`. Two color `PMODE`s
+will automatically be convereted to greyscale before dithering. The program will
+automatically select the best `SCREEN` for color images to best match the image
+colors. Then it outputs a single `.BIN` file, and an ECB BASIC program which is 
+suitable for loading and displaying the image. The `.BAS` program includes 
+commenting to make it easier to understand what it is doing.
 
 To create a `.DSK` image suitable for loading on the CoCo, if you are using 
-Windows, you can either drag and drop the `.BAS` program onto the `makedisk.bat` 
-batch file that should be included with this distribution, or call `makedisk 
+Windows, you can either drag and drop the `.BAS` program onto the `makedisk2.bat` 
+batch file that should be included with this distribution, or call `makedisk2 
 MYPIC.BAS` from the command line, assuming that all of the files are in the 
 same directory as the ToolShed `decb.exe` utility. A similar script could 
 easily be constructed for a Linux or Mac system. 
 
 I originally wrote the script in order to create a fancy title screen for a 
 game I was writing, so I didn't add a lot of bells and whistles to the load/
-display program. Since each image is 32kB, four separate images could be saved 
-on one 35 track disk image if desired (or more on a larger disk image), and the 
-`.BAS` file could easily be modified to load any of the images from a selection 
-menu, or even cycle through the images like a slideshow. Feel free to modify it 
-as you see fit.
+display program. Feel free to modify it as you see fit.
