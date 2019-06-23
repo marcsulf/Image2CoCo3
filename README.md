@@ -1,8 +1,8 @@
 # Image2CoCo2
-##Brief Description
-###Python utility for converting image files for use with PMODE graphics on the Tandy Color Computers
+## Brief Description
+### Python utility for converting image files for use with PMODE graphics on the Tandy Color Computers
 
-##Files
+## Files
 <dl>
   <dt><strong>Image2CoCo3_2.py</strong></dt>
   <dd>Python 2.XX version of script</dd>
